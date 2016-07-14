@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transform四个属性的综合</title>
+	<style>
+		#total{
+			display:block;
+			margin:100px;
+			width: 200px;
+			height: 200px;
+			background:red;
+			-webkit-transition:all 1s ease-in;
+		}
+		#total:hover{
+			-webkit-transform:translate(200px) rotate(180deg) scale(1.5) skew(45deg);
+		}
+	</style>
+</head>
+<body>
+	<a href="#" id="total"></a>
+</body>
+</html>

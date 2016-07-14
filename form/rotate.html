@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>rotate</title>
+	<style>
+        /* transition */
+        a{
+           text-decoration: none;
+        }
+        /* rotate */
+        #myDIV{
+            display:block;
+            margin:100px 100px 0 100px;
+            width: 390px;
+            height: 220px;
+            float:left;
+            background:url(./img/people.jpg) no-repeat;
+            text-align: center;
+            line-height: 100px;
+            color:#fff;
+            -webkit-transition:all 1s ease-in;
+            -moz-transition:all 1s ease-in;
+            -o-transition:all 1s ease-in;
+            transition:all 1s ease-in;
+        }
+        #myDIV:hover{
+            -webkit-transform:rotate(180deg);/* 谷歌、safari */
+            -moz-transform:rotate(180deg);/* 火狐 */
+            -o-transform:rotate(180deg);/* 欧朋 */
+            transform:rotate(180deg);/* 标准浏览器 */
+        }
+
+        /* rotateX */
+        #divX{
+            display:block;
+            margin:100px 0 0 100px;
+            float:left;
+            width: 390px;
+            height: 220px;
+            background:url(./img/people.jpg) no-repeat;
+            text-align: center;
+            line-height: 100px;
+            color:#fff;
+            -webkit-transition:all 1s ease-in;
+            -moz-transition:all 1s ease-in;
+            -o-transition:all 1s ease-in;
+            transition:all 1s ease-in;
+        }
+        #divX:hover{
+            -webkit-transform:rotateX(180deg);
+            -moz-transform:rotateX(180deg);
+            -o-transform:rotateX(180deg);
+            transform:rotateX(180deg);
+        }
+
+        /* rotateY */
+        #divY{
+            display:block;
+            margin:100px 0 0 100px;
+            float:left;
+            width: 390px;
+            height: 220px;
+            background:url(./img/people.jpg) no-repeat;
+            text-align: center;
+            line-height: 100px;
+            color:#fff;
+            -webkit-transition:all 1s ease-in;
+            -moz-transition:all 1s ease-in;
+            -o-transition:all 1s ease-in;
+            transition:all 1s ease-in;
+        }
+        #divY:hover{
+            -webkit-transform:rotateY(180deg);
+            -moz-transform:rotateY(180deg);
+            -o-transform:rotateY(180deg);
+            transform:rotateY(180deg);
+        }
+
+        /* rotate3d */
+        #divZ{
+            display:block;
+            margin:100px 0 0 100px;
+            float:left;
+            width: 390px;
+            height: 220px;
+            background:url(./img/people.jpg) no-repeat;
+            text-align: center;
+            line-height: 100px;
+            color:#fff;
+            -webkit-transition:all 1s ease-in;
+            -moz-transition:all 1s ease-in;
+            -o-transition:all 1s ease-in;
+            transition:all 1s ease-in;
+        }
+        #divZ:hover{
+            -webkit-transform:rotate3d(1,1,0,180deg);
+            -moz-transform:rotate3d(1,1,0,180deg);
+            -o-transform:rotate3d(1,1,0,180deg);
+            transform:rotate3d(1,1,0,180deg);
+        }
+        
+    </style>
+
+</head>
+<body>
+    <a href="#" id="myDIV">myDIV</a>
+    <a href="#" id="divX">divX</a>
+    <a href="#" id="divY">divY</a>
+    <a href="#" id="divZ"></a>
+</body>
+</html>

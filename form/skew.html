@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>skew</title>
+	<style>
+		#skew{
+			display:block;
+			margin:150px 100px 0 100px;
+			float:left;
+			width: 200px;
+			height: 200px;
+			background:red;
+			-webkit-transition:all 2s ease-in;
+            -moz-transition:all 2s ease-in;
+            -o-transition:all 2s ease-in;
+            transition:all 2s ease-in;
+		}
+		#skew:hover{
+			-webkit-transform:skew(45deg);
+		    -moz-transform:skew(45deg);
+		    -o-transform:skew(45deg);
+		    transform:skew(45deg);
+		}
+
+		
+
+		#skewY{
+			display:block;
+			margin:150px 100px 0 100px;
+			float:left;
+			width: 200px;
+			height: 200px;
+			background:red;
+			-webkit-transition:all 2s ease-in;
+            -moz-transition:all 2s ease-in;
+            -o-transition:all 2s ease-in;
+            transition:all 2s ease-in;
+		}
+		#skewY:hover{
+			-webkit-transform:skewY(45deg);
+		    -moz-transform:skewY(45deg);
+		    -o-transform:skewY(45deg);
+		    transform:skewY(45deg);
+		}
+
+		#skewTwo{
+			display:block;
+			margin:150px 100px 0 100px;
+			float:left;
+			width: 200px;
+			height: 200px;
+			background:red;
+			-webkit-transition:all 2s ease-in;
+            -moz-transition:all 2s ease-in;
+            -o-transition:all 2s ease-in;
+            transition:all 2s ease-in;
+		}
+		#skewTwo:hover{
+			-webkit-transform:skew(45deg,45deg);
+		    -moz-transform:skew(45deg,45deg);
+		    -o-transform:skew(45deg,45deg);
+		    transform:skew(45deg,45deg);
+		}
+	</style>
+</head>
+<body>
+	<a href="#" id="skew"></a>
+	<a href="#" id="skewY"></a>
+	<a href="#" id="skewTwo"></a>
+</body>
+</html>
